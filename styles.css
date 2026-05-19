@@ -1,0 +1,96 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(194, 142, 46);
+    color: rgb(244, 242, 241);
+    text-align: center;
+    padding: 20px;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    background-color: rgb(15, 17, 0);
+    padding: 15px;
+
+    position: sticky;
+    top: 80px;
+}
+
+nav a {
+    color: rgb(238, 168, 168);
+    text-decoration: none;
+    margin-right: 20px;
+
+}
+
+
+.boxes {
+    margin-top: 150px;
+}
+
+/* Box Model */
+.box {
+    border: 25px solid rgb(82, 6, 6);
+    padding: 30px;
+    margin: 50px;
+    background-color: rgb(207, 205, 205);
+}
+
+/* Positioning */
+.position-container {
+    position: relative;
+
+    border: 2px solid rgb(131, 9, 15);
+    padding: 30px;
+    margin: 20px;
+}
+
+/* Absolute Label */
+.label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    background-color: red;
+    color: white;
+
+    padding: 5px;
+}
+
+/* Float Layout */
+.main-content {
+    float: left;
+    width: 65%;
+
+    background-color: rgb(13, 173, 226);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    float: right;
+    width: 30%;
+
+    background-color: rgb(123, 153, 123);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Clear Float */
+footer {
+    clear: both;
+
+    background-color: rgb(238, 94, 94);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}

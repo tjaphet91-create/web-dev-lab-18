@@ -3,75 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-
-    <style>
-      nav {
-        background-color: green;
-        padding: 10px;
-      } 
-      nav ul{
-        list-style: none;
-      }
-      nav ul li{
-        display: inline;
-        margin-right: 15px;
-
-      }
-      nav ul li a{
-        color: white;
-
-      }
-      nav ul li a:hover{
-        color: greenyellow;
-      }
-      h2{
-        color: darkblue;
-        text-transform: uppercase;
-      }
- 
-    </style>
+    <title>LAB 4 CSS Layout</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-   <header id="header">
-        <h1 style="color:purple;"> Athumani Ochu</h1>
-        <p>Web Development Student</p>
-   </header> 
-   <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#routine">Routine</a></li>
-        </ul>
-   </nav>
-   
-   <section id="about" class="section">
-    <h2>ABOUT ME</h2>
-    <p> My name is Athumani Ochu, Student at Ardhi University </p>
-    <img src="Images/20241121_145149.jpg" alt="My Image" style="width: 300px;" style="height: 300px;">
-   </section>
 
-   <section id="skills" class="Skills">
-    <h2>My Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JAVASCRIPT</li>
-    </ul>
+    -- Fixed Header --
+    <header>
+        <h1>CSS Layout Control</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Services</a>
+    </nav>
+
+    -- Part 1 Box Model --
+    <section class="boxes">
+
+        <div class="box">
+            <h2>Box One</h2>
+            <p>This box shows padding, border, and margin.</p>
+
+        </div>
+
+        <div class="box">
+            <h2>Box Two</h2>
+            <p>Margins create space between boxes.</p>
+        </div>
+
+        <div class="box">
+            <h2>Box Three</h2>
+            <p>Padding creates space inside the box.</p>
+        </div>
+
+    </section>
+
+    <section class="position-container">
+        <span class="label">NEW</span>
+
+        <p>
+            This section shows relative & absolute positioning.
+        </p>
+    </section>
+
     
-   </section>
+    <section class="main-content">
+        <h2>Main Content</h2>
+        <p>
+            This is the main content section floated to the left.
+        </p>
+    </section>
 
-   <section id="routine" class="Routine">
-    <h2>My Daily Routine</h2>
-    <ol>
-        <li>Wake up</li>
-         <li>working out</li>
-          <li>Attend Class</li>
-           <li>Practise coding</li>
+    <aside class="sidebar">
 
-    </ol>
+        <h2>Sidebar</h2>
+        <p>
+            This sidebar is floated to the right.
+        </p>
+    </aside>
 
-   </section>
+   
+    <footer>
+        <p>Footer Section</p>
+    </footer>
+
+</body>
 </html>
